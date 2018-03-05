@@ -11,7 +11,8 @@ def selects_the_titles_of_all_projects_and_their_pledge_amounts
 end
 
 def selects_the_user_name_age_and_pledge_amount_for_all_pledges
-"SELECT Users.name, Users.age, SUM(Pledges.amount) FROM users INNER JOIN users ON Users.id = Pledges.user_id GROUP BY Users.name;"
+"SELECT Users.name, Users.age, SUM(Pledges.amount) FROM users INNER JOIN users ON Users.id = Pledges.user_id;"
+#GROUP BY Users.name
 end
 
 def selects_the_titles_and_amount_over_goal_of_all_projects_that_have_met_their_funding_goal
