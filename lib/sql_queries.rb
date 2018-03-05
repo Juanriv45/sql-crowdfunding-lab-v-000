@@ -9,11 +9,11 @@
 def selects_the_titles_of_all_projects_and_their_pledge_amounts
 "SELECT projects.title, pledges.amount FROM projects INNER JOIN pledges ON Projects.id = Pledges.project_id; "
 
-1.	SELECT column(s)
-2.	FROM table_one
-3.	INNER JOIN table_two
-4.	ON table_one.column_name = table_two.column_name
-5.	WHERE table_two.column_name = condition;
+#1.	SELECT column(s)
+#2.	FROM table_one
+#3.	INNER JOIN table_two
+#4.	ON table_one.column_name = table_two.column_name
+#5.	WHERE table_two.column_name = condition;
 
 end
 
