@@ -8,17 +8,10 @@
 
 def selects_the_titles_of_all_projects_and_their_pledge_amounts
 "SELECT Projects.title, SUM(Pledges.amount) FROM projects INNER JOIN pledges ON Projects.id = Pledges.project_id GROUP BY Projects.title;"
-
-#1.	SELECT column(s)
-#2.	FROM table_one
-#3.	INNER JOIN table_two
-#4.	ON table_one.column_name = table_two.column_name
-#5.	WHERE table_two.column_name = condition;
-
 end
 
 def selects_the_user_name_age_and_pledge_amount_for_all_pledges
-"Write your SQL query Here"
+"SELECT Users.name, Users.age, Pledges.amount FROM users INNER JOIN users ON Users.id = Pledges.user_id"
 end
 
 def selects_the_titles_and_amount_over_goal_of_all_projects_that_have_met_their_funding_goal
